@@ -3,7 +3,8 @@
   <div class="w-full max-w-2xl bg-white shadow-lg rounded-lg p-6 space-y-4">
     <!-- Current Word -->
     <div class="text-center mb-4">
-      <h2 class="text-xl font-semibold">Current Word:
+      <h2 class="text-xl font-semibold">
+        Current Word:
         <span class="text-blue-600">{{ currentWord }}</span>
       </h2>
     </div>
@@ -24,14 +25,16 @@
         class="flex-1"
         @click="submitWord"
         :disabled="!newWord"
-      >Submit</el-button>
+        >Submit</el-button
+      >
 
       <el-button
         type="warning"
         class="flex-1"
         @click="getHint"
         :disabled="hintUsed"
-      >Hint</el-button>
+        >Hint</el-button
+      >
     </div>
 
     <!-- Word History -->
@@ -44,7 +47,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   data() {
     return {
